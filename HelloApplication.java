@@ -1,5 +1,6 @@
 package com.example.taller;
 
+import com.example.taller.Equipo;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -34,7 +35,7 @@ public class HelloApplication extends Application {
         System.out.println(sector.getId());
         System.out.println(sector.getNombre());
         System.out.println(sector.getContacto());
-        Sector sector2 = new Sector("Educación","261-2-123123");
+        Sector sector2 = new Sector("Educación","261-2-123123"); // Tuve que crear un metodo para este test
         System.out.println(sector.equals(sector2));
         sector2.setNombre("Depósito");
         sector2.setContacto("261-1-112233");
@@ -88,6 +89,7 @@ public class HelloApplication extends Application {
         System.out.println("Corriendo test Ficha");
         Ficha ficha01 = new Ficha(equipo,persona);
         System.out.println(ficha01.getId());
+
         System.out.println(ficha01.getFechaIngreso());
         System.out.println(ficha01.toString());
 
