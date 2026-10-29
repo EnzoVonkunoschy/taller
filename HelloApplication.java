@@ -26,7 +26,15 @@ public class HelloApplication extends Application {
     }
 
     private void  test00(){
-        System.out.println("Corriendo tests Sector");
+
+        Controlador controlador = Controlador.getInstance();
+        System.out.println(controlador);
+        Modelo modelo = Modelo.getInstance();
+        System.out.println(modelo);
+
+        
+
+        /* System.out.println("Corriendo tests Sector");
 
         Sector sector = new Sector();
         sector.setNombre("Educación");
@@ -90,7 +98,7 @@ public class HelloApplication extends Application {
         System.out.println(ficha01.getId());
         System.out.println(ficha01.getFechaIngreso());
         System.out.println(ficha01.toString());
-
+        */
 
 
     };
