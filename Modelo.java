@@ -36,7 +36,7 @@ public class Modelo {
 
     public void guardarSector(Sector sec) {
         String nombreArchivo = getRutaStorage();
-        ArrayList<Sector> colSec = dameSectores();
+        ArrayList<Sector> colSec = dameSectores(); //Recuperamos los sectores que ya estan y lo agregamos a una lista
         boolean existe = false;
         for (Sector s : colSec) {
             if (s.equals(sec)) {
