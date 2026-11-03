@@ -3,8 +3,8 @@ package com.example.taller;
 
 import java.util.UUID;
 import java.util.Objects;
-
-public class Sector {
+import java.io.Serializable;
+public class Sector implements Serializable {
 
     private String id;
     private String nombre;
@@ -14,7 +14,7 @@ public class Sector {
         this.id = UUID.randomUUID().toString();
     }
     public Sector(String nombre, String contacto) {
-
+        this();
         this.nombre = nombre;
         this.contacto = contacto;
     }
