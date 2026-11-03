@@ -6,7 +6,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class HelloApplication extends Application {
 
@@ -32,17 +31,6 @@ public class HelloApplication extends Application {
         System.out.println(controlador);
         Modelo modelo = Modelo.getInstance();
         System.out.println(modelo);
-
-        Sector sectorTaller = new Sector("Taller de Electronica" , "interno-2@empresa.com");
-        Sector sectorSistemas = new Sector("Sistemas y Redes", "soporte@empresa.com");
-
-        modelo.guardarSector(sectorTaller);
-        modelo.guardarSector(sectorSistemas);
-
-        ArrayList<Sector> sectores = modelo.dameSectores();
-        for (Sector sec : sectores) {
-            System.out.println(sec);
-        }
 
         
 
