@@ -3,7 +3,10 @@ import java.util.ArrayList;
 
 public class Modelo {
     private static Modelo instancia;
-    private final String archivoSectores = "sectores.txt";
+    //String ruta = System.getProperty("user.dir");
+    //String storage = ruta+"\\src\\main\\java\\com\\example\\";
+    //String storageOficinas = storage + "oficinas.txt";
+    private final String archivoSectores = System.getProperty("user.dir")+"\\src\\main\\java\\com\\example\\"+"sectores.txt";
 
 
     private Modelo() {

@@ -1,10 +1,11 @@
 
 package com.example.taller;
 
+import java.io.Serializable;
 import java.util.UUID;
 import java.util.Objects;
 
-public class Sector {
+public class Sector implements Serializable {
 
     private String id;
     private String nombre;
