@@ -34,7 +34,7 @@ public class HelloApplication extends Application {
 
         
 
-        /* System.out.println("Corriendo tests Sector");
+        System.out.println("Corriendo tests Sector");
 
         Sector sector = new Sector();
         sector.setNombre("Educación");
@@ -50,6 +50,9 @@ public class HelloApplication extends Application {
         System.out.println(sector.toString());
         System.out.println(sector2.toString());
 
+        modelo.guardarSector(sector);
+        System.out.println(modelo.dameSectores());
+/*
         System.out.println("Corriendo tests Equipo");
 
         Equipo equipo = new Equipo();
